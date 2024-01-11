@@ -1,0 +1,27 @@
+{
+  "name": "clath",
+  "version": "1.0.0",
+  "description": "for personal website",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Rahul",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.9.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.1.3",
+    "react-router-dom": "^6.20.0",
+    "redux": "^4.2.1"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}
