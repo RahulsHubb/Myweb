@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useEffect, useState } from 'react'
 import ProductCard from './product-card'
 import ClassComponent from './classComponent'
@@ -94,6 +95,17 @@ const ProductBase = () => {
         })}
 
         {/* <ProductCard/>
+=======
+import React from 'react'
+import ProductCard from './product-card'
+
+const ProductBase = () => {
+  return (
+    <div className='product_base'>
+        <ProductCard/>
+        <ProductCard/>
+        <ProductCard/>
+>>>>>>> refs/remotes/origin/main
         <ProductCard/>
         <ProductCard/>
         <ProductCard/>
@@ -105,8 +117,11 @@ const ProductBase = () => {
         <ProductCard/>
         <ProductCard/>
         <ProductCard/>
+<<<<<<< HEAD
         <ProductCard/> */}
         {/* <ClassComponent name={"Nike"}/> */}
+=======
+>>>>>>> refs/remotes/origin/main
         
     </div>
   )

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { Suspense, lazy } from "react";
 import {
   BrowserRouter as Router,
@@ -89,6 +90,14 @@ root.render(
 // import About from './component/About';
 // import Contact from './component/Contact';
 // import NotFound from './component/NotFound';
+=======
+import React from "react";
+import ReactDOM from "react-dom/client"
+import Index from ".";
+import Header from "./component/Header";
+import './css/styles.css'
+import ProductBase from "./component/products";
+>>>>>>> refs/remotes/origin/main
 // const runReact = React.createElement(
 //     "h1",
 //     { id: "Newh1",className: "rahul" },
@@ -102,6 +111,7 @@ root.render(
 // const App=()=>{
 //     return <Index/>
 // }
+<<<<<<< HEAD
 // const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(
 //   <>
@@ -148,3 +158,10 @@ root.render(
 // };
 
 // export default App;
+=======
+  const root = ReactDOM.createRoot(document.getElementById("root"));
+  root.render(<>
+  <Header/>
+  <ProductBase/>
+  </>);
+>>>>>>> refs/remotes/origin/main
