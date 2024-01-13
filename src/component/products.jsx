@@ -69,7 +69,7 @@ const ProductBase = () => {
       </div>
       <div className="p-3">
         <h1>Number of Orders {myVariable} {val}</h1>
-        <button onClick={()=>
+        <button className='p-2 fontsi' onClick={()=>
           {dispatch(increment(myVariable+1));
           dispatch(test(!val));
           console.log("first")
