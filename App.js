@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { Suspense, lazy } from "react";
 import {
   BrowserRouter as Router,
@@ -10,15 +9,16 @@ import {
 } from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import Index from ".";
-import Header from "./component/Header";
-import "./css/styles.css";
-import ProductBase from "./component/products";
+import Header from "./src/component/Header";
+import "./src/css/styles.css";
+import "./index.css"
+import ProductBase from "./src/component/products";
 import { Provider } from "react-redux";
 import store from "./dataStore/configureRedux";
-import About from "./component/About";
-import ErrorPage from "./component/ErrorPage";
+import About from "./src/component/About";
+import ErrorPage from "./src/component/ErrorPage";
 // import Contact from "./component/Contact"
-import Restaurents from "./component/Restaurents";
+import Restaurents from "./src/component/Restaurents";
 // const runReact = React.createElement(
 //     "h1",
 //     { id: "Newh1",className: "rahul" },
@@ -33,7 +33,7 @@ import Restaurents from "./component/Restaurents";
 //     return <Index/>
 // }
 
-const Contact = lazy(()=> import("./component/Contact") )
+const Contact = lazy(()=> import("./src/component/Contact") )
 const ApplayOut = () => {
   return (
     <div className="app">
@@ -90,14 +90,6 @@ root.render(
 // import About from './component/About';
 // import Contact from './component/Contact';
 // import NotFound from './component/NotFound';
-=======
-import React from "react";
-import ReactDOM from "react-dom/client"
-import Index from ".";
-import Header from "./component/Header";
-import './css/styles.css'
-import ProductBase from "./component/products";
->>>>>>> refs/remotes/origin/main
 // const runReact = React.createElement(
 //     "h1",
 //     { id: "Newh1",className: "rahul" },
@@ -111,7 +103,6 @@ import ProductBase from "./component/products";
 // const App=()=>{
 //     return <Index/>
 // }
-<<<<<<< HEAD
 // const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(
 //   <>
@@ -158,10 +149,3 @@ import ProductBase from "./component/products";
 // };
 
 // export default App;
-=======
-  const root = ReactDOM.createRoot(document.getElementById("root"));
-  root.render(<>
-  <Header/>
-  <ProductBase/>
-  </>);
->>>>>>> refs/remotes/origin/main
