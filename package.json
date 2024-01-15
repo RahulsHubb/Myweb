@@ -5,7 +5,7 @@
   "main": "App.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel index.html",
+    "start": "rm -rf .parcel-cache && parcel index.html",
     "build": "parcel build index.html",
     "eject": "react-scripts eject",
     "build:styles": "postcss src/css/tailwind.css -o src/styles/index.css",

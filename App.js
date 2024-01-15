@@ -12,7 +12,7 @@ import Index from ".";
 import Header from "./src/component/Header";
 import "./src/css/styles.css";
 import "./index.css"
-import ProductBase from "./src/component/products";
+import ProductBase from "./src/component/productsBase";
 import { Provider } from "react-redux";
 import store from "./dataStore/configureRedux";
 import About from "./src/component/About";
