@@ -4,7 +4,7 @@ import UserContext from './utils/UserContext';
 
 const Header = () => { 
   
-  const {loggedUser} = useContext(UserContext)
+  const {loggedUser, setUserInfo} = useContext(UserContext)
   console.log(loggedUser);
   return (
     <header className=' header p-0 bg-yellow-100'>
@@ -29,7 +29,7 @@ const Header = () => {
             <li className='nav-item hover:bg-yellow-200 hover:text-white rounded overflow-hidden p-3'>change user</li>
 
             <li className='nav-item hover:bg-yellow-200 hover:text-black rounded overflow-hidden p-3'>
-              <input type='text' className='p-2' value={loggedUser}/>
+              <input type='text' className='p-2' onChange={(e)=>{setUserInfo(e.target.value)}} value={loggedUser}/>
             </li>
             <li className='nav-item hover:bg-yellow-200 hover:text-white rounded overflow-hidden p-3'>user: {loggedUser}</li>
         </ul>

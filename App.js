@@ -36,15 +36,25 @@ import UserContext from "./src/component/utils/UserContext";
 
 const Contact = lazy(()=> import("./src/component/Contact") )
 const ApplayOut = () => {
+  const {loggedUser} = useContext(UserContext);
+  console.log(loggedUser, "From app");
+  const [userInfo, setUserInfo] = useState(loggedUser);
+  useEffect(()=>{
+    const userName = {
+      name : "Dewal"
+    }
+    setUserInfo(userName.name);
 
+  console.log(loggedUser, "From loggedUser");
+  }, [loggedUser])
   return (
 
-  // <UserContext.Provider value={{}}>
+  <UserContext.Provider value={{loggedUser : userInfo, setUserInfo}}>
     <div className="app">
       <Header />
       <Outlet/>
     </div>
-  // </UserContext.Provider>
+  </UserContext.Provider>
   );
 };
 
