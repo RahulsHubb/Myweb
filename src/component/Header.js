@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import UserContext from './utils/UserContext';
 
 const Header = () => { 
+  
+  const {loggedUser} = useContext(UserContext)
+  console.log(loggedUser);
   return (
     <header className=' header p-0 bg-yellow-100'>
         <div className='logo'>
@@ -22,7 +26,12 @@ const Header = () => {
               <Link to="/restaurants">Restaurants</Link>
             </li>
             
-            <li className='nav-item hover:bg-yellow-200 hover:text-white rounded overflow-hidden p-3'>Search</li>
+            <li className='nav-item hover:bg-yellow-200 hover:text-white rounded overflow-hidden p-3'>change user</li>
+
+            <li className='nav-item hover:bg-yellow-200 hover:text-black rounded overflow-hidden p-3'>
+              <input type='text' className='p-2' value={loggedUser}/>
+            </li>
+            <li className='nav-item hover:bg-yellow-200 hover:text-white rounded overflow-hidden p-3'>user: {loggedUser}</li>
         </ul>
     </header>
   )
