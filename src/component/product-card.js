@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProductCard = (props) => {
   return (
-    <div className='product_card bg-green-100 hover:bg-green-200' key={props.num}>
+    <div className='product_card bg-green-100 hover:bg-green-200'>
         {/* <img src='https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/5415202/2023/3/30/48bb1aab-42cb-4271-afe9-a91b5c5c3f311680168086320-Roadster-Men-Grey-Cargos-Trousers-5171680168085369-1.jpg' alt='' className=' product_img'/>
          */}
          <img src={'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/'+props.imgId} className=' product_img'/>

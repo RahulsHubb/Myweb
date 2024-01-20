@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy, useContext, useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -19,6 +19,7 @@ import About from "./src/component/About";
 import ErrorPage from "./src/component/ErrorPage";
 // import Contact from "./component/Contact"
 import Restaurents from "./src/component/Restaurents";
+import UserContext from "./src/component/utils/UserContext";
 // const runReact = React.createElement(
 //     "h1",
 //     { id: "Newh1",className: "rahul" },
@@ -35,11 +36,15 @@ import Restaurents from "./src/component/Restaurents";
 
 const Contact = lazy(()=> import("./src/component/Contact") )
 const ApplayOut = () => {
+
   return (
+
+  // <UserContext.Provider value={{}}>
     <div className="app">
       <Header />
       <Outlet/>
     </div>
+  // </UserContext.Provider>
   );
 };
 
